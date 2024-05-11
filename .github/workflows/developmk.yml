@@ -18,6 +18,6 @@ jobs:
               run: |
                 git checkout main
                 git pull origin main
-                git merge develop_mk --no-ff --no-edit
+                git merge develop_mk 
                 git push origin main
       
