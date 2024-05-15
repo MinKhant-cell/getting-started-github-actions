@@ -12,13 +12,12 @@ jobs:
         steps:
             # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
             - uses: actions/checkout@v4
-            # Runs a single command using the runners shell
-            # - name: Merge develop_mk to main
-            #   run: |
-            #     git checkout main
-            #     git pull origin main
-            #     git merge develop_mk 
-            #     git push origin main
+            - name: Merge develop_mk to main
+              run: |
+                git checkout main
+                git pull origin main
+                git merge develop_mk 
+                git push origin main
             
             - name: Success Push 
               run: echo "Success Push" 
